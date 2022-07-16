@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://matinana.github.io/diversity_is_rainbows/sitemap.xml
