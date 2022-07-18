@@ -1,6 +1,5 @@
 baseURL: "https://matinana.github.io/diversity_is_rainbows/"
 title: Diversity is Rainbows!
-canonifyurls: true
 publishDir: "docs"
 paginate: 5
 theme: PaperMod
