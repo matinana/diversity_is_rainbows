@@ -54,8 +54,8 @@ params:
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
+    # icon: /apple-touch-icon.png
+    # iconHeight: 35
 
   # profile-mode
   profileMode:
@@ -74,16 +74,14 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Diversity is Raindows! \U0001F308"
+    Content: マイノリティな選択をすることが多かったので指針になるようなプロダクトを創るのがすきです。
 
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+    # - name: twitter
+    #   url: "https://twitter.com/"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/matinana"
 
   analytics:
     google:
@@ -114,19 +112,16 @@ params:
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
 menu:
-  main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
+  # 一旦非表示に
+  # main:
+  # - identifier: categories
+  #   name: categories
+  #   url: /categories/
+  #   weight: 10
+  # - identifier: tags
+  #   name: tags
+  #   url: /tags/
+  #   weight: 20
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
