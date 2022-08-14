@@ -149,6 +149,14 @@ draft: true
 
 `title`など`—--`で囲まれている部分の内容は各テーマによって異なりますが、テーマ自体のドキュメンにサンプルの記載があるので（今回選んだ PaperlMod の場合は[こちら](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation#sample-pagemd)）そちらを参照して自分好みのサイトに仕上げてみてください。
 
+お疲れ様でした！上記で一連のブログ作成＆記事追加作業は完了になります！
+
+みなさんもぜひ手軽にブログを作って初めてみてください。
+
+Happy Hacking!
+
+---
+
 ### 補足 (ディレクトリ構造に関して)
 
 ```
@@ -168,8 +176,10 @@ Hugo の公式サイトでは上記のコマンドでブログポストを作成
 
 ---
 
-お疲れ様でした！上記で一連のブログ作成＆記事追加作業は完了になります！
+### 参考にさせて頂いたページ
 
-みなさんもぜひ手軽にブログを作って初めてみてください。
+下記ページ導入時に参考にさせていただきました！ありがとうございました！
 
-Happy Hacking!
+- [Hugo と GitHub Pages でブログを公開する](https://open-groove.net/other-tools/hugo-github-pages-blog/)
+- [Hugo+Github Pages でプロフィールページを作ってみた](https://zenn.dev/okaponta/articles/c302f58507febc)
+- [Hugo + GitHub Pages（独自ドメイン適応）でサイトを作成・公開する](https://qiita.com/ysdyt/items/a581277dd1312a0e83c3)
