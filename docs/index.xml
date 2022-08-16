@@ -9,7 +9,23 @@
       <link>https://matinana.github.io/diversity_is_rainbows/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 16 Jul 2022 22:17:33 +0900</lastBuildDate><atom:link href="https://matinana.github.io/diversity_is_rainbows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Aug 2022 23:47:18 +0900</lastBuildDate><atom:link href="https://matinana.github.io/diversity_is_rainbows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>チームのテストを書く負担を減らそうとしてる話</title>
+      <link>https://matinana.github.io/diversity_is_rainbows/posts/2022_0730/</link>
+      <pubDate>Tue, 16 Aug 2022 23:47:18 +0900</pubDate>
+      
+      <guid>https://matinana.github.io/diversity_is_rainbows/posts/2022_0730/</guid>
+      <description>4 月の半ばから新しいサービスに関わるようになりました。
+チームメンバーも変わったんですが、朝会などでテストを書くのが辛いという声を聞くことが少なくなくありました。
+前のサービスでは、テスト規約があったり、テストを書くのが好きな人達が多かったからか、自分もテストを書くのは好きな方なので「なにかできないかな？」とちょっと考えたりしていた。
+いろいろな方の助けもあって、ちょうどそれらが少し形づいた＆今後の展開も見えてきたタイミングで社内勉強会があったので、今までの動きや今後やりたいことをスライドにしてみました。
+せっかくなのでブログでその時の資料を公開してみようと思います。
+社内勉強会の資料ということで、色々隠してあり、見にくい部分も多くて恐縮の嵐ですが、きっと他チームに入ったときもこういう感じで進めていくとワークするんだろうなぁという流れになってると思うので、もし同じ課題感がある人はぜひ参考にしてみてください。
+新しい施策をチームに浸透させることは、言うは易しなので、少しずつ成果につながる形で進めて行けると良いなぁ。。、
+スライド</description>
+    </item>
+    
     <item>
       <title>Hugo x Github Pages でブログを作る</title>
       <link>https://matinana.github.io/diversity_is_rainbows/posts/2022_0716/</link>
