@@ -9,7 +9,22 @@
       <link>https://matinana.github.io/diversity_is_rainbows/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 19 Nov 2022 20:03:51 +0900</lastBuildDate><atom:link href="https://matinana.github.io/diversity_is_rainbows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Nov 2022 23:07:59 +0900</lastBuildDate><atom:link href="https://matinana.github.io/diversity_is_rainbows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ポモドーロ・テクニックに関して改めて整理してみる</title>
+      <link>https://matinana.github.io/diversity_is_rainbows/posts/2022_1120/</link>
+      <pubDate>Sun, 20 Nov 2022 23:07:59 +0900</pubDate>
+      
+      <guid>https://matinana.github.io/diversity_is_rainbows/posts/2022_1120/</guid>
+      <description>前置き（ここは記事を書くきっかけなので読み飛ばし OK です） まだ開発者として働き始める何年も前に、alphatodoというタスク管理アプリを作りました。
+アプリ名の由来は「あなたがすべきすべてのこと」という意味の all (you) have to do というフレーズと、タスク管理はすべての仕事の一歩目という意味からギリシャ語の第一文字である α の音から取っています。
+と、アプリを作るぐらいですから、タスク管理ツールや生産性に関する興味関心は昔からありました。
+その関心とは裏腹に、最近は仕事をしているときもチーム全体のタスク管理で使っている asana ぐらいしかプロダクティビティに関するツールを用いておらずで、日々のタスク管理は下記のようなものだけになっています。
+タスク管理（asana を用いてタスクの一覧化とスコープ分解を行う）
+PJ 全体のタスクを親タスクとして asana のカードを作る ここのサイズ感は PJ の規模次第で、数ヶ月のものから 1week のものまである このカードは kanban レーンにおいて in progress に載せずに todo に置き続ける 1 の親タスクのサブタスクで全体のタスクを細かく切り分けたタスクを管理する このサブタスクは in progress の状態になったときに、それぞれ別のカードとして kanban 上の in progress に置く ここのタスクのサイズ感は「アウトプットが伴うもの」で設定する in progress ⇒ review ⇒ done の流れに乗せて、チームメンバーとの進捗が見える化できるようにアウトプットが伴う粒度でタスク分解しています 開発タスクの場合は、１ PR のサイズ感で切り出す 上記子タスクのカードのサブタスクで、さらに細かい todo を記載する 毎日の todo 管理（slack を用いてその日にやるべきこと一覧と優先順位設計を行う）
+一日の初めに上記 3 でセットした todo や、その日にやるべきレビューや MTG などの予定を slack の個人メッセージにすべて書き出す 優先順位順に並び替える 上から片付けていく 上記でタスク管理としては十分機能しています。</description>
+    </item>
+    
     <item>
       <title>リモートワークファシリテーションのまなび</title>
       <link>https://matinana.github.io/diversity_is_rainbows/posts/2022_1119/</link>
