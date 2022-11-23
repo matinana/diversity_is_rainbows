@@ -94,7 +94,7 @@ hugo server
 - hugo コマンドで docs 配下にファイルを作成
 
   ```ruby
-  $ fugo
+  $ hugo
 
   # 上記で /docs にindex.htmlなどテンプレ用のデータが作成されます
   ```
