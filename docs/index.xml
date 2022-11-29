@@ -9,13 +9,26 @@
       <link>https://matinana.github.io/diversity_is_rainbows/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Nov 2022 00:38:08 +0900</lastBuildDate><atom:link href="https://matinana.github.io/diversity_is_rainbows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Nov 2022 01:49:39 +0900</lastBuildDate><atom:link href="https://matinana.github.io/diversity_is_rainbows/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>良いPRに含まれているもの</title>
+      <title>直近のコミットログ50件から振り返りをしてみる企画</title>
       <link>https://matinana.github.io/diversity_is_rainbows/posts/2022_1129/</link>
-      <pubDate>Tue, 29 Nov 2022 00:38:08 +0900</pubDate>
+      <pubDate>Tue, 29 Nov 2022 01:49:39 +0900</pubDate>
       
       <guid>https://matinana.github.io/diversity_is_rainbows/posts/2022_1129/</guid>
+      <description>前回の記事のラストに「良い PR に含まれるもの」として「適切な粒度のコミット」を記載しました。
+適切な粒度のコミット…言葉にすると「そりゃ大切だよね！」となりますが、実際は適切な粒度のコミットを作るのは難しいですよねｗ
+今回は「どうやって適切な粒度のコミットを作るのか？」ではなく、「自分はどれくらい適切な粒度のコミットが出来ているのだろう？」を振り返るために改めて自分のコミットログを見直して反省する回を開いてみようと思います…！！笑
+(その前に…!) 接頭辞 自分はコミットメッセージには Angular.js/DEVELOPERS.md に記載がある下記の接頭辞を使っているので、事前に書いておきます！
+### Type Must be one of the following: - feat: A new feature - fix: A bug fix - docs: Documentation only changes - style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc) - refactor: A code change that neither fixes a bug nor adds a feature - perf: A code change that improves performance - test: Adding missing or correcting existing tests - chore: Changes to the build process or auxiliary tools and libraries such as documentation generation 接頭辞をつけることの利点は「コミットの内容がわかりやすくなる」という利点だけでなく、「機能を接頭辞の type 単位で切り分けるようになる」という効能もあります。</description>
+    </item>
+    
+    <item>
+      <title>良いPRに含まれているもの</title>
+      <link>https://matinana.github.io/diversity_is_rainbows/posts/2022_1128/</link>
+      <pubDate>Mon, 28 Nov 2022 00:38:08 +0900</pubDate>
+      
+      <guid>https://matinana.github.io/diversity_is_rainbows/posts/2022_1128/</guid>
       <description>良い PR と、良くない PR が世の中にはあると思いますが、それを切り分けるものは「コード自体の品質」や「どういうスコープで切り分けているか」など、複数の要素が合わさって判断されていると考えます。
 今日は「良い PR」の構成要素の一つ、コードやスコープではなく、「PR 自身の中身」がどうあると良い PR になるのだろうということを考えてみます。
 良い PR とは？ コードは理解しやすくなければいけない。
