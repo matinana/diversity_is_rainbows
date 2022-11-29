@@ -9,7 +9,33 @@
       <link>https://matinana.github.io/diversity_is_rainbows/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 26 Nov 2022 22:52:31 +0900</lastBuildDate><atom:link href="https://matinana.github.io/diversity_is_rainbows/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Nov 2022 00:38:08 +0900</lastBuildDate><atom:link href="https://matinana.github.io/diversity_is_rainbows/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>良いPRに含まれているもの</title>
+      <link>https://matinana.github.io/diversity_is_rainbows/posts/2022_1129/</link>
+      <pubDate>Tue, 29 Nov 2022 00:38:08 +0900</pubDate>
+      
+      <guid>https://matinana.github.io/diversity_is_rainbows/posts/2022_1129/</guid>
+      <description>良い PR と、良くない PR が世の中にはあると思いますが、それを切り分けるものは「コード自体の品質」や「どういうスコープで切り分けているか」など、複数の要素が合わさって判断されていると考えます。
+今日は「良い PR」の構成要素の一つ、コードやスコープではなく、「PR 自身の中身」がどうあると良い PR になるのだろうということを考えてみます。
+良い PR とは？ コードは理解しやすくなければいけない。
+リーダブルコード - 名著、リーダブルコードで書かれているように、良いコードとは理解しやすいコードです。
+それはコードというものは自身が書く時間よりも、他者に読まれる時間の方が長いから必然ではあります。
+PR も同様だと考えています。他者にとって理解しやすい内容が網羅されている PR こそ良い PR だと考えています。
+これは PR がコードと同じく下記の特性を持っているからです。
+長期に渡って読まれる なにか既存の実装を変更しようと思った際に、「ここの背景ってどうなっているんだろう？」と当時のチケットや slack を探しても、見つけるのが難しい場合があります。
+ですが、PR であればコードから blame で一瞬で拾えます。
+自分も今でも数年前の PR を読むことはザラにありますが、PR にコード以外の情報がないとコードをしっかり読む必要があり、色んなコストが発生してしまいます。
+多くの人に読まれる PR を読む対象は目の前のレビュアーだけではありません。
+レビューする人が決まっていて、「この人なら詳しいから省略しても良い」は多くのケースで当てはまりません。
+レビュー時点ではレビュアーがドメインの知識を持っているため詳細が省略可能であっても、未来の時点で他の人が参照する場合はそうだとは限らないからです。
+上記のような特性がある以上、コードに気を使うエンジニアがコードを取りまとめる PR に気を使わないのは本末転倒です。
+では、どんな PR だと理解されやすい PR になるでしょうか？
+次項で自分が「あると良いなぁ」と思っている構成要素を上げてみようと思います！
+具体的な PR の構成要素 （その前に）対象の PR の性質 PR の情報をどこまで詳細に書くのかは、下記のような情報によって異なります。
+機能のサービスレベル PR で扱うスコープの大きさ レビューからマージまでの優先度・緊急度 レビュー相手の PR で取り扱う実装や仕様への理解度 ここでは、障害対応などでなく、ある程度スケジュールに余裕があり、粒度も極端に小さくなく、レビュアーもランダムな方にレビューする場合の PR の場合とします。</description>
+    </item>
+    
     <item>
       <title>チームでプランニングポーカーをやってみた学び</title>
       <link>https://matinana.github.io/diversity_is_rainbows/posts/2022_1126_2/</link>
