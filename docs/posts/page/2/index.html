@@ -34,35 +34,24 @@ PJ 全体のタスクを親タスクとして asana のカードを作る ここ
 スライド</p></div><footer class=entry-footer><span title='2022-07-30 23:47:18 +0900 JST'>July 30, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;9 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to チームのテストを書く負担を減らそうとしてる話" href=https://matinana.github.io/diversity_is_rainbows/posts/2022_0730/></a></article><article class=post-entry><header class=entry-header><h2>Hugo x Github Pages でブログを作る</h2></header><div class=entry-content><p>100 番煎じぐらいかもしれませんが、せっかく Hugo x Github Pages でこちらのブログを作ってみたので、一連の作業ログを残しておこうと思います。
 取り急ぎの補足 基本は hugo のクイックスタート参照で OK https://gohugo.io/getting-started/quick-start/ 自分が選んだテーマにも同様のクイックスタートがある場合が多いのでそちら参照した方がよい このブログのテーマ: https://github.com/adityatelange/hugo-PaperMod/wiki/Installation おすすめの hugo テーマまとめてるサイトとかあります 公式: https://themes.gohugo.io/ Hugo を導入する では早速ブログ作成してみましょう！
 まずは Hugo の導入からです。
-brew install hugo hugo new site サイト名 # 今後選ぶテーマによっては下記のようにyml形式を選んだ方がよい場合もある # ymlフォーマット選ばない場合はtoml形式になる # 後でconfigファイルを設定するときに toml か yml のどちらかでサンプルのテンプレートを作っているときがあるので # 先にテーマを選んだほうが良いです hugo new site サイト名 -f yml git init cd サイト名 git init テーマ指定 # テーマによってコマンドは変わります # 下記はこのブログのテーマのPaperModの場合 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod git submodule update --init --recursive config ファイルを設定...</p></div><footer class=entry-footer><span title='2022-07-16 22:17:33 +0900 JST'>July 16, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;257 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to Hugo x Github Pages でブログを作る" href=https://matinana.github.io/diversity_is_rainbows/posts/2022_0716/></a></article><article class=post-entry><header class=entry-header><h2>サービスリードエンジニアとは？</h2></header><div class=entry-content><p>人 ◕ ‿‿ ◕ 人 「僕たちのサービスで、サービスリードエンジニアになってよ！」
-と、いつ言われても大丈夫なように、テックリードエンジニアとともにリードエンジニアの一翼を担うサービスリードエンジニアに関して整理してみます。
-恥ずかしながら私自身もゆるふわっとしか理解していないので、いくつかの企業のインタビューなどを引用し、「サービスリードエンジニア」に求められる資質や態度を明らかにできればと考えています。
-結論: サービスリードエンジニアとは？ 「サービスリード」とは、その一文字を直す作業に意義、喜びを感じられること
-引用元: リードエンジニアにおけるサービスリードという役割
-早速の結論が引用という暴挙になりましたが、引用元の記事が素晴らしすぎるので、使わせていただきました。
-サービスリードに関して調べていく中でわかったことは、
-BASE DeNA 関連記事を読むと、ほぼ上記２つの企業のどちらかの情報発信にあたるということです（笑）。
-理解を促進するという意味でも、二社の情報発信に心より感謝を述べます。ありがとうございます！
-そもそものサービスリードの定義は？ 先程の結論がサービスリードの本質をすべて表していると感じましたが、下記３つの引用先で伝えているサービスリードの定義を見ることで、その大枠を掴もうと思います。
-ランサーズ サービスリードエンジニアは、サービス開発におけるユーザー体験の向上など、幅広い面でチームをリードしていく職業です。主な仕事は、ユーザーの行動などを SQL やアナリティクスツールで解析して、そこからサービスの企画をしたり、実際に企画した機能を実装したりしています。
-引用元: ユーザーの心をハックせよ！沼野剛志が語る「サービスリードエンジニア」という仕事の醍醐味
-DeNA サービスを成功させるために何をすべきか自分自身で考え、技術力を駆使して率先して実現できるオールラウンドなエンジニアです。システム設計や開発はもちろん、機能やサービスの意図、目標とする数字などを理解して、それに適合するような仕様を自ら考えます。また、これから行おうとする施策について、仮説が正しいかどうかの分析、判断のサポートを行います。
-引用元: DeNA 採用ページ内 キャリアパス
-BASE BASE のサービス哲学を熟知し、高い顧客体験を実現するサービスを開発することで、体験の質を通じたサービス信頼性を実現する。 顧客に支持され続けるサービスの継続的発展に寄与し、サービスづくりの模範となる役割。
-引用元: リードエンジニアにおけるサービスリードという役割
-上記のそれぞれの定義を見ると、サービスへの理解とコミットメントがサービスリードの軸のように思えます。
-サービスを通してミッションを実現するために動く姿勢はテックリード・サービスリードともにありますが、
-開発チームの内的要因（アーキテクチャ・開発環境）への貢献の比重 内的要因から育まれたものを外的要因（ステークホルダー・サービス）に伝えるための貢献の比重 上記の働きかけのバランスのうち前者が強いのがテックリード、後者が強いのがサービスリードなのかなと私は感じました。
-サービスリードがいることで開発がどう良くなるのか？ シンプルに、“サービスリードエンジニア”がいないとプロダクトが劣化しますね。
-引用元: 【決意表明 vol.2】技術部部長が語る、ゲームの可能性を拡げる“サービスリードエンジニア”集団とは
-前項までの項目で見たように、サービスリードはサービス開発にとって重要な存在であることがわかってきました。
-その上で、いくつかの記事を読む中で良いな〜と思った２つの考え方を共有させてください。
-1. サービスリードは適切な粒度の問題解決を行うという姿勢 （前略）その修正の粒度や判断力が顧客ニーズや会社の OKR 達成に対して不適切であれば、その行動を誰かがマネジメントする必要があります。（中略） 目の前で困っている人、その裏側にいる人を想像し、適切な粒度の修正を行うという判断力は、テックを中心とした思想とは少し違う価値観が求められることが多いようです。
-引用元: リードエンジニアにおけるサービスリードという役割
-開発サイドはどうしてもビジネスサイド側からの要求を前提条件として受け入れてしまいがちになります。それは、
-サービスにおける勝ち筋への理解 サービスにおける専門領域への理解 上記のような本質的な分野への深度がビジネスサイド > エンジニアサイドになりがちなことや、
-リファクタされたコード 網羅されたテストコード 上記のような負債にならない長期的な価値へのコミットメントを正とする思想がコミュニティにあるからだと思います。
-しかし、サービスリードには、そのタイミングにおける適切な粒度の問題解決が必要だと記事では述べられています。 これ…もう…めちゃくちゃわかる…。...</p></div><footer class=entry-footer><span title='2021-06-30 22:52:13 +0900 JST'>June 30, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;99 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to サービスリードエンジニアとは？" href=https://matinana.github.io/diversity_is_rainbows/posts/2021_0630/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://matinana.github.io/diversity_is_rainbows/posts/>« Prev</a>
+brew install hugo hugo new site サイト名 # 今後選ぶテーマによっては下記のようにyml形式を選んだ方がよい場合もある # ymlフォーマット選ばない場合はtoml形式になる # 後でconfigファイルを設定するときに toml か yml のどちらかでサンプルのテンプレートを作っているときがあるので # 先にテーマを選んだほうが良いです hugo new site サイト名 -f yml git init cd サイト名 git init テーマ指定 # テーマによってコマンドは変わります # 下記はこのブログのテーマのPaperModの場合 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod git submodule update --init --recursive config ファイルを設定...</p></div><footer class=entry-footer><span title='2022-07-16 22:17:33 +0900 JST'>July 16, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;257 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to Hugo x Github Pages でブログを作る" href=https://matinana.github.io/diversity_is_rainbows/posts/2022_0716/></a></article><article class=post-entry><header class=entry-header><h2>リードエンジニアの施策や動きのまとめ</h2></header><div class=entry-content><p>人 ◕ ‿‿ ◕ 人 「僕たちのサービスで、リードエンジニアになってよ！」
+と、言われた時にスムーズに業務に移れるように、様々な企業でリードエンジニアの方々が行った施策を下記の３点の目線からまとめてみようと思います。網羅的に列挙するのではなく、各社の tips をまとめることで、3 点の肝を掴むきっかけになればと考えています。
+設計・開発環境整備 コミュニケーション 意思決定 0. 自社のリードエンジニアのミッションを決める ３つの視点から…といいつつも、早速脱線して０項目目…。
+いろいろな記事を読んでいく中で、どこの企業でもリードエンジニアが担う責務や、貢献をしっかりと定義している企業が多かったです。
+開発からマネジメントまで多岐にわたる貢献を求められるからこそ、しっかりとポジションが持つ意味を言語化する必要性を感じます。
+三者のリードエンジニアの方の記事から引用していますが、大枠は共通する部分があるといえど、どの粒度で捉えるのかというのは企業や人によって異なるため、チームで共通認識を持ちやすい形で定義することが重要だなと感じました。
+Gunosy 弊社のリードエンジニアのミッションとは以下です。
+高い技術力ならびに、事業ドメインへの深い知識を持ち、 事業におけるトップエンジニアとしてプロダクトの成長に貢献する （中略）
+技術的意思決定のデリゲーション 育成とキャリア を担って欲しいという思いで設置された背景があります。
+引用元:リードエンジニアとしての役割
+BASE 事業に配属され、事業の中での開発やサービス運営をリードする以上の成果を期待されたロール。 サービスの継続的発展を実現するための技術力や、BASE のサービス哲学を具現化するためのサービス開発力などを兼ね備え、圧倒的な主体性でサービスの成長に取り組む模範となるべき役割を担う。
+引用元:リードエンジニアにおけるサービスリードという役割
+クックパッド 今の会社で「テックリード」に何が求められているのかを明確にするところから始めました。 ・コードやプロダクトの品質の担保 ・コードレビュー ・他部署との技術的な相談をする場合の窓口 ・メンバーの生産性を向上できるように立ち回る ・メンバーの成長を促進する ・メンバーの半期ごとの評価を行う 引用元:初めてテックリードになって半年が経ったので振り返る
+1. 設計・開発環境整備 リードエンジニアに求められる役割としてアーキテクチャの設計や開発環境の整備などは最たるものの一つですが、中でも興味深かったのは未来を見据えた取り組みへのコミットが一エンジニアの立場よりも強い印象が多かったことです。
+具体的には
+1. 今後実装をしていく/改修していく上で障害になりうる部分を早めに対処する態度 インフラ・サービスレベルの技術選定をしっかりと行う 放置気味になっている不具合の見える化・修正 CI や環境構築の整備 2. （将来負債にならないための）現状把握と属人化しない開発チームへの投資 設計やコードレビューには必ず目を通し、サービスの全体像を常に把握する姿勢 チケット管理を適切に行い、何が背景で何がゴールなのかをしっかりと定義して、誰もが共通の認識＆アウトプットを出せる準備を行う姿勢 開発ドキュメントの整理 コーディング規約・テスト規約などを属人化しないように処理の切り出し先やエラーログの粒度までの設計 上記のような、すぐに成果の出るアウトプットではなく、長期的にチームの価値が高まるアウトプットを意識している方が多くいました。
+2. コミュニケーション 大軸としてはチームのメンバーが最大限に力を発揮出来るようにすることを主体にコミュニケーションを取ることが肝だと感じます。
+チームの技術力の底上げのために必要な施策や挑戦の設定 勉強会の主催 責務の適切な委譲 メンバーの進捗管理 メンバーが開発に集中できるように他部署との窓口になる 1 on 1 心理的安全性の確保 メンバーの日々のペインの洗い出し また、...</p></div><footer class=entry-footer><span title='2021-06-30 23:54:03 +0900 JST'>June 30, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;123 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to リードエンジニアの施策や動きのまとめ" href=https://matinana.github.io/diversity_is_rainbows/posts/2021_0630_2/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://matinana.github.io/diversity_is_rainbows/posts/>« Prev</a>
 <a class=next href=https://matinana.github.io/diversity_is_rainbows/posts/page/3/>Next »</a></nav></footer></main><footer class=footer><span>&copy; 2022 <a href=https://matinana.github.io/diversity_is_rainbows/>Diversity is Rainbows!</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
