@@ -34,18 +34,35 @@ PJ 全体のタスクを親タスクとして asana のカードを作る ここ
 スライド</p></div><footer class=entry-footer><span title='2022-07-30 23:47:18 +0900 JST'>July 30, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;9 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to チームのテストを書く負担を減らそうとしてる話" href=https://matinana.github.io/diversity_is_rainbows/posts/2022_0730/></a></article><article class=post-entry><header class=entry-header><h2>Hugo x Github Pages でブログを作る</h2></header><div class=entry-content><p>100 番煎じぐらいかもしれませんが、せっかく Hugo x Github Pages でこちらのブログを作ってみたので、一連の作業ログを残しておこうと思います。
 取り急ぎの補足 基本は hugo のクイックスタート参照で OK https://gohugo.io/getting-started/quick-start/ 自分が選んだテーマにも同様のクイックスタートがある場合が多いのでそちら参照した方がよい このブログのテーマ: https://github.com/adityatelange/hugo-PaperMod/wiki/Installation おすすめの hugo テーマまとめてるサイトとかあります 公式: https://themes.gohugo.io/ Hugo を導入する では早速ブログ作成してみましょう！
 まずは Hugo の導入からです。
-brew install hugo hugo new site サイト名 # 今後選ぶテーマによっては下記のようにyml形式を選んだ方がよい場合もある # ymlフォーマット選ばない場合はtoml形式になる # 後でconfigファイルを設定するときに toml か yml のどちらかでサンプルのテンプレートを作っているときがあるので # 先にテーマを選んだほうが良いです hugo new site サイト名 -f yml git init cd サイト名 git init テーマ指定 # テーマによってコマンドは変わります # 下記はこのブログのテーマのPaperModの場合 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod git submodule update --init --recursive config ファイルを設定...</p></div><footer class=entry-footer><span title='2022-07-16 22:17:33 +0900 JST'>July 16, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;257 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to Hugo x Github Pages でブログを作る" href=https://matinana.github.io/diversity_is_rainbows/posts/2022_0716/></a></article><article class=post-entry><header class=entry-header><h2>未経験からのチーム開発で学んだTipsと態度</h2></header><div class=entry-content><p>はじめに こんにちは matinana です。 CAMPFIRE Ownersという融資型クラウドファウンディングでサービス開発を行っています！
-この記事は**CAMPFIRE Advent Calendar 2020**の 21 日目の記事です。
-アドベントカレンダーも終盤戦に入りましたが、CAMP の記事の中にはゲーム要素を含んだ**走る！音が出る！HTML でミニゲームをつくりました**など面白い記事が沢山ありますのでぜひこの機会に覗いてみてください！
-本記事の目的 チーム開発に関して全く知らなかった約一年前の自分が、一年間のチーム開発を通して学んだ態度や tips をまとめることで、
-チーム開発の流れの理解 チーム開発に必要になりそうな態度の一案を提示 上記を行い、これからチーム開発を始める人の不安を払拭する一助になることを目的にしています。
-書こうと思った動機（当時の私） 私が CAMPFIRE に入社したのは昨年の 11 月です。 独学でいくつかのアプリを作っていましたが、プログラミングの業務や他の人とチーム開発することは未経験でした。
-そのため、当時の自分は github でブランチを分けての開発などもほぼしたことがなく、
-使ったことがある git コマンドといえばgit pushのみ (addやcommitは vscode でポチッと出来た) GitHub Flowどころかプルリクエストの作成も使ったことがない 上記のような、チーム開発のtの字も知らない（チですらない…）状態でした。
-チーム開発一年目というのは、エンジニアとしてもきっと一年目。 目の前の山積みの問題にしっかりと向き合えるように、チーム開発の雰囲気を掴み取ってもらい、闇雲に生まれてしまう不安を軽減できればと考えています。
-話さないこと ✕ 開発〜プルリクエスト作成までの基本的な git のコマンドについて こちらは@shh-nkmr さんが書いてくださっているgit 初学者の初めてのチーム開発で気をつける事の備忘録にまとまっています。 開発〜プルリクエスト作成までの基本的な git コマンドに自信がない場合はこちらをご参照ください。
-✕ 具体的なコードの書き方やリファクタのコツなどに関して 私も知りたいです 😂 笑 残念ながらこれらは対象外です。
-目次 基本的なチーム開発の流れの整理 課題や仕様の整理 実装 git blame を活かす 実装のスコープを意識する コミットメッセージにプレフィックスをつける rebase でコミットを整理する PR 作成 気になることは全部コメントで書く PR を小分けにする 動作確認をしっかりする レビュー 疑問点を投げるのも大切なこと 良いと思った部分は言葉にして良いと言う 悪い点を指摘するのではなく、相手の理解が進む形で投げるようにする nits IMO MUST などのレビューコメントにラベルをつけてみる 本番反映 あとがき 基本的なチーム開発の流れの整理 GitHub Flow どころかプルリクエストの作成も使ったことがない...</p></div><footer class=entry-footer><span title='2020-12-21 22:49:54 +0900 JST'>December 21, 2020</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;571 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to 未経験からのチーム開発で学んだTipsと態度" href=https://matinana.github.io/diversity_is_rainbows/posts/2020_1221/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://matinana.github.io/diversity_is_rainbows/posts/>« Prev</a>
+brew install hugo hugo new site サイト名 # 今後選ぶテーマによっては下記のようにyml形式を選んだ方がよい場合もある # ymlフォーマット選ばない場合はtoml形式になる # 後でconfigファイルを設定するときに toml か yml のどちらかでサンプルのテンプレートを作っているときがあるので # 先にテーマを選んだほうが良いです hugo new site サイト名 -f yml git init cd サイト名 git init テーマ指定 # テーマによってコマンドは変わります # 下記はこのブログのテーマのPaperModの場合 git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod git submodule update --init --recursive config ファイルを設定...</p></div><footer class=entry-footer><span title='2022-07-16 22:17:33 +0900 JST'>July 16, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;257 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to Hugo x Github Pages でブログを作る" href=https://matinana.github.io/diversity_is_rainbows/posts/2022_0716/></a></article><article class=post-entry><header class=entry-header><h2>サービスリードエンジニアとは？</h2></header><div class=entry-content><p>人 ◕ ‿‿ ◕ 人 「僕たちのサービスで、サービスリードエンジニアになってよ！」
+と、いつ言われても大丈夫なように、テックリードエンジニアとともにリードエンジニアの一翼を担うサービスリードエンジニアに関して整理してみます。
+恥ずかしながら私自身もゆるふわっとしか理解していないので、いくつかの企業のインタビューなどを引用し、「サービスリードエンジニア」に求められる資質や態度を明らかにできればと考えています。
+結論: サービスリードエンジニアとは？ 「サービスリード」とは、その一文字を直す作業に意義、喜びを感じられること
+引用元: リードエンジニアにおけるサービスリードという役割
+早速の結論が引用という暴挙になりましたが、引用元の記事が素晴らしすぎるので、使わせていただきました。
+サービスリードに関して調べていく中でわかったことは、
+BASE DeNA 関連記事を読むと、ほぼ上記２つの企業のどちらかの情報発信にあたるということです（笑）。
+理解を促進するという意味でも、二社の情報発信に心より感謝を述べます。ありがとうございます！
+そもそものサービスリードの定義は？ 先程の結論がサービスリードの本質をすべて表していると感じましたが、下記３つの引用先で伝えているサービスリードの定義を見ることで、その大枠を掴もうと思います。
+ランサーズ サービスリードエンジニアは、サービス開発におけるユーザー体験の向上など、幅広い面でチームをリードしていく職業です。主な仕事は、ユーザーの行動などを SQL やアナリティクスツールで解析して、そこからサービスの企画をしたり、実際に企画した機能を実装したりしています。
+引用元: ユーザーの心をハックせよ！沼野剛志が語る「サービスリードエンジニア」という仕事の醍醐味
+DeNA サービスを成功させるために何をすべきか自分自身で考え、技術力を駆使して率先して実現できるオールラウンドなエンジニアです。システム設計や開発はもちろん、機能やサービスの意図、目標とする数字などを理解して、それに適合するような仕様を自ら考えます。また、これから行おうとする施策について、仮説が正しいかどうかの分析、判断のサポートを行います。
+引用元: DeNA 採用ページ内 キャリアパス
+BASE BASE のサービス哲学を熟知し、高い顧客体験を実現するサービスを開発することで、体験の質を通じたサービス信頼性を実現する。 顧客に支持され続けるサービスの継続的発展に寄与し、サービスづくりの模範となる役割。
+引用元: リードエンジニアにおけるサービスリードという役割
+上記のそれぞれの定義を見ると、サービスへの理解とコミットメントがサービスリードの軸のように思えます。
+サービスを通してミッションを実現するために動く姿勢はテックリード・サービスリードともにありますが、
+開発チームの内的要因（アーキテクチャ・開発環境）への貢献の比重 内的要因から育まれたものを外的要因（ステークホルダー・サービス）に伝えるための貢献の比重 上記の働きかけのバランスのうち前者が強いのがテックリード、後者が強いのがサービスリードなのかなと私は感じました。
+サービスリードがいることで開発がどう良くなるのか？ シンプルに、“サービスリードエンジニア”がいないとプロダクトが劣化しますね。
+引用元: 【決意表明 vol.2】技術部部長が語る、ゲームの可能性を拡げる“サービスリードエンジニア”集団とは
+前項までの項目で見たように、サービスリードはサービス開発にとって重要な存在であることがわかってきました。
+その上で、いくつかの記事を読む中で良いな〜と思った２つの考え方を共有させてください。
+1. サービスリードは適切な粒度の問題解決を行うという姿勢 （前略）その修正の粒度や判断力が顧客ニーズや会社の OKR 達成に対して不適切であれば、その行動を誰かがマネジメントする必要があります。（中略） 目の前で困っている人、その裏側にいる人を想像し、適切な粒度の修正を行うという判断力は、テックを中心とした思想とは少し違う価値観が求められることが多いようです。
+引用元: リードエンジニアにおけるサービスリードという役割
+開発サイドはどうしてもビジネスサイド側からの要求を前提条件として受け入れてしまいがちになります。それは、
+サービスにおける勝ち筋への理解 サービスにおける専門領域への理解 上記のような本質的な分野への深度がビジネスサイド > エンジニアサイドになりがちなことや、
+リファクタされたコード 網羅されたテストコード 上記のような負債にならない長期的な価値へのコミットメントを正とする思想がコミュニティにあるからだと思います。
+しかし、サービスリードには、そのタイミングにおける適切な粒度の問題解決が必要だと記事では述べられています。 これ…もう…めちゃくちゃわかる…。...</p></div><footer class=entry-footer><span title='2021-06-30 22:52:13 +0900 JST'>June 30, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;99 words&nbsp;·&nbsp;Me</footer><a class=entry-link aria-label="post link to サービスリードエンジニアとは？" href=https://matinana.github.io/diversity_is_rainbows/posts/2021_0630/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://matinana.github.io/diversity_is_rainbows/posts/>« Prev</a>
 <a class=next href=https://matinana.github.io/diversity_is_rainbows/posts/page/3/>Next »</a></nav></footer></main><footer class=footer><span>&copy; 2022 <a href=https://matinana.github.io/diversity_is_rainbows/>Diversity is Rainbows!</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
